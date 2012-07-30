@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'scala'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+    mavenCentral();
+    maven {
+        url "http://dist.codehaus.org/"
+    }
+}
+
+dependencies {
+    compile group: 'org.multiverse', name: 'multiverse-core', version:'0.7.0'
+}
